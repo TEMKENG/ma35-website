@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="de" data-ma35-home>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>MA35 · Thibaut Temkeng</title>
+  <meta name="description" content="Thibaut Temkeng, Softwareentwickler (M.Sc. Informatik): virtuelle Erprobung, HiL-Testautomatisierung, Toolketten, Machine Learning und Computer Vision." />
+  <meta name="theme-color" content="#020617" />
+  <meta property="og:title" content="MA35 · Thibaut Temkeng" />
+  <meta property="og:description" content="Softwareentwickler für virtuelle Erprobung, HiL-Testautomatisierung und Machine Learning." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+</head>
+<body>
+  <a class="skip" href="#profil">Zum Inhalt springen</a>
+
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a class="nav__brand" href="#top" aria-label="MA35, nach oben">
+      <img src="./brand/ma35-mark.svg" width="36" height="36" alt="" />
+      <span>MA35</span>
+    </a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menü öffnen">
+      <span></span><span></span>
+    </button>
+    <nav id="nav-links" class="nav__links" aria-label="Hauptnavigation">
+      <a href="#profil">Profil</a>
+      <a href="#erfahrung">Erfahrung</a>
+      <a href="#kompetenzen">Kompetenzen</a>
+      <a href="#projekte">Projekte</a>
+      <a href="#engagement">Engagement</a>
+      <a href="#kontakt" class="nav__cta">Kontakt</a>
+    </nav>
+    <div class="nav__progress" aria-hidden="true"><i></i></div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <img class="hero__logo" src="./brand/ma35-wordmark-dark-bg.svg" width="300" height="100" alt="MA35" />
+        <p class="eyebrow"><span class="dot"></span> Virtuelle Probefahrt · Sensoren · Machine Learning</p>
+        <h1 id="hero-title" class="hero__title">
+          <span class="line">Thibaut</span>
+          <span class="line line--accent">Temkeng</span>
+        </h1>
+        <p class="hero__lead">Softwareentwickler · Virtuelle Erprobung, HiL-Testautomatisierung &amp; Toolkettenentwicklung</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#erfahrung">Testfahrt starten</a>
+          <a class="btn btn--ghost" href="#kontakt">Kontakt aufnehmen</a>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#profil" aria-label="Weiter zum Profil"><span></span></a>
+      <div class="hud" aria-hidden="true">
+        <div><b>RADAR</b> <em data-hud="angle">000°</em></div>
+        <div><b>LIDAR</b> <em data-hud="points">0</em> pts</div>
+        <div><b>V</b> <em data-hud="speed">0</em> km/h</div>
+      </div>
+    </section>
+
+    <!-- PROFIL -->
+    <section id="profil" class="section" aria-labelledby="profil-title">
+      <div class="section__head">
+        <span class="section__no">01</span>
+        <h2 id="profil-title">Profil</h2>
+      </div>
+      <div class="profil">
+        <p class="profil__text reveal">
+          Softwareentwickler (M.Sc. Informatik) mit über vier Jahren Erfahrung in der Entwicklung
+          simulationsbasierter Testumgebungen, Sensorintegration und Testautomatisierung. Schwerpunkt auf
+          <strong>C/C++</strong>, <strong>Python</strong> sowie der Entwicklung und Optimierung von Toolketten
+          für <strong>Radar- und Ultraschallsensoren</strong>. Verbindet fundierte Kenntnisse in Softwareentwicklung,
+          Simulation und Machine Learning mit praktischer Erfahrung in interdisziplinärer Zusammenarbeit und der
+          eigenverantwortlichen Umsetzung technischer Lösungen.
+        </p>
+        <ul class="stats">
+          <li class="stat reveal"><b data-count="4" data-suffix="+">4+</b><span>Jahre Berufserfahrung in der virtuellen Erprobung</span></li>
+          <li class="stat reveal"><b data-count="90" data-prefix="&gt;" data-suffix=" %">&gt;90 %</b><span>der HiL-Tests automatisiert</span></li>
+          <li class="stat reveal"><b>M.Sc.</b><span>Informatik, Vertiefung Data Science</span></li>
+          <li class="stat reveal"><b data-count="3">3</b><span>Sprachen: Französisch, Deutsch, Englisch</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ERFAHRUNG -->
+    <section id="erfahrung" class="section" aria-labelledby="erfahrung-title">
+      <div class="section__head">
+        <span class="section__no">02</span>
+        <h2 id="erfahrung-title">Berufserfahrung</h2>
+      </div>
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job__meta"><time>06/2022 – heute</time><span>Gaimersheim</span></div>
+          <div class="card">
+            <h3>Entwickler Virtuelle Probefahrt</h3>
+            <p class="job__company"><a href="https://vaiva.io/" target="_blank" rel="noopener">VAIVA GmbH</a></p>
+            <ul class="bullets">
+              <li>Analyse und Optimierung bestehender HiL-Prozesse sowie Aufnahme und Bewertung technischer und funktionaler Anforderungen.</li>
+              <li>Implementierung von Simulationskomponenten (Sensormodelle, Sensoranbindungen, Simulationsframeworks) in C++ und Python auf Basis der Functional Engineering Platform (FEP) und Virtual Test Drive (VTD).</li>
+              <li>Entwicklung einer Toolkette zur Beschleunigung des Testprozesses für Radar- und Ultraschallsensoren am HiL-Prüfstand.</li>
+              <li>Konzeption und Umsetzung von Automatisierungslösungen auf Basis von C/C++ und JSON, wodurch <strong>über 90 % der HiL-Tests</strong> automatisiert werden konnten.</li>
+              <li>Integration und Test der Simulationen an Hardware-in-the-Loop-Systemen.</li>
+              <li>Weiterentwicklung und regelmäßige Wartung der Toolketten für die Sensoreinspeisung und die virtuelle Testumgebung.</li>
+            </ul>
+            <h4>Zusammenarbeit</h4>
+            <ul class="bullets bullets--soft">
+              <li>Abstimmung mit Tier-1-Zulieferern zu Testschnittstellen für Sensoren.</li>
+              <li>Koordination, fachliche Unterstützung und Review der Arbeitsergebnisse von Kolleginnen und Kollegen.</li>
+              <li>Abstimmung, Priorisierung und Koordination von Sprint-Tickets mit den Product Ownern.</li>
+            </ul>
+            <ul class="tags"><li>C++</li><li>Python</li><li>HiL</li><li>VTD</li><li>FEP</li><li>Radar</li><li>Ultraschall</li></ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job__meta"><time>02/2022 – 06/2022</time><span>Gaimersheim</span></div>
+          <div class="card">
+            <h3>Werkstudent</h3>
+            <p class="job__company"><a href="https://vaiva.io/" target="_blank" rel="noopener">VAIVA GmbH</a></p>
+            <ul class="bullets">
+              <li>Analyse nationaler und internationaler Unfall- und Normalfahrdaten sowie grafische Aufbereitung der Ergebnisse.</li>
+              <li>Entwicklung und Wartung von Python-Skripten und -Bibliotheken.</li>
+              <li>Entwicklung von Qt-Tools (Qt C++) zur Visualisierung erhobener Daten im Rahmen des AARU-Projekts (Audi Accident Research Unit).</li>
+            </ul>
+            <ul class="tags"><li>Python</li><li>Qt C++</li><li>Datenanalyse</li><li>Visualisierung</li></ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job__meta"><time>04/2020 – 10/2021</time><span>Gaimersheim</span></div>
+          <div class="card">
+            <h3>Werkstudent | Praktikum</h3>
+            <p class="job__company"><a href="https://efs-techhub.com/" target="_blank" rel="noopener">e:fs TechHub GmbH</a></p>
+            <ul class="bullets">
+              <li>Aufbau von Data-Labeling-Pipelines für die Verarbeitung von LiDAR-Punktwolken.</li>
+              <li>Segmentierung von LiDAR-Punktwolken mit Deep-Learning-Verfahren.</li>
+              <li>Optimierung digitaler Stadtmodelle mit der FME Software Suite.</li>
+            </ul>
+            <ul class="tags"><li>LiDAR</li><li>Deep Learning</li><li>Pipelines</li><li>FME</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- KOMPETENZEN -->
+    <section id="kompetenzen" class="section" aria-labelledby="kompetenzen-title">
+      <div class="section__head">
+        <span class="section__no">03</span>
+        <h2 id="kompetenzen-title">Kompetenzen</h2>
+      </div>
+      <div class="skills">
+        <article class="skill reveal">
+          <h3>Programmiersprachen</h3>
+          <ul class="chips"><li>Python</li><li>C/C++</li><li>Java</li><li>Rust</li><li>Julia</li></ul>
+          <p class="skill__note">Grundkenntnisse: JavaScript, TypeScript, HTML</p>
+        </article>
+        <article class="skill reveal">
+          <h3>Test &amp; Simulation</h3>
+          <ul class="chips"><li>Hardware-in-the-Loop</li><li>Virtual Test Drive</li><li>Functional Engineering Platform</li><li>CANape</li><li>Environment Simulator Minimalistic</li></ul>
+        </article>
+        <article class="skill reveal">
+          <h3>Machine Learning &amp; Data Science</h3>
+          <ul class="chips"><li>PyTorch</li><li>TensorFlow</li><li>Keras</li><li>Scikit-learn</li><li>pandas</li><li>Deep Metric Learning</li><li>CNNs</li><li>Pruning</li><li>Quantisierung</li><li>Computer Vision</li><li>Bildklassifikation</li><li>Textklassifikation mit LLMs</li></ul>
+        </article>
+        <article class="skill reveal">
+          <h3>Daten &amp; Pipelines</h3>
+          <ul class="chips"><li>SQL</li><li>Data-Labeling-Pipelines</li><li>Datenanalyse &amp; Visualisierung</li><li>FME Software Suite</li></ul>
+        </article>
+        <article class="skill reveal">
+          <h3>Automatisierung</h3>
+          <ul class="chips"><li>Testautomatisierung</li><li>Toolkettenentwicklung</li><li>Prozessautomatisierung</li><li>n8n</li><li>Make</li><li>Zite</li><li>Sipgate</li><li>Fillout</li><li>Airtable</li><li>ClickUp</li></ul>
+        </article>
+        <article class="skill reveal">
+          <h3>GUI &amp; Visualisierung</h3>
+          <ul class="chips"><li>Qt (PyQt, Qt C++)</li><li>Grafische Oberflächen</li><li>Visualisierung von Messdaten</li></ul>
+        </article>
+        <article class="skill reveal">
+          <h3>KI-gestützte Entwicklung</h3>
+          <ul class="chips"><li>Claude</li><li>Codex</li><li>Webseiten &amp; Anwendungen mit KI-Unterstützung</li></ul>
+        </article>
+        <article class="skill reveal">
+          <h3>Tools &amp; Methoden</h3>
+          <ul class="chips"><li>Git</li><li>Docker</li><li>Conan</li><li>Code-Reviews</li><li>Agile Sprints</li><li>Microsoft 365</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJEKTE / STUDIUM -->
+    <section id="projekte" class="section" aria-labelledby="projekte-title">
+      <div class="section__head">
+        <span class="section__no">04</span>
+        <h2 id="projekte-title">Studium &amp; Projekte</h2>
+      </div>
+      <div class="edu">
+        <article class="card reveal">
+          <p class="kicker">03/2020 – 09/2022 · <a href="https://www.tha.de/" target="_blank" rel="noopener">Technische Hochschule Augsburg</a></p>
+          <h3>Master of Science Informatik</h3>
+          <p class="muted">Vertiefung Data Science</p>
+          <div class="work">
+            <h4>Masterarbeit</h4>
+            <p>Deep-Learning-Methoden zur Reduzierung von Trainingsdaten für die Klassifikation industrieller Bilddaten: Aufbereitung industrieller Bilddaten, Bewertung neuronaler Netzarchitekturen und Reduzierung des Trainingsdatenbedarfs durch Deep Metric Learning.</p>
+          </div>
+          <div class="work">
+            <h4>Studienprojekt: Hardwarebeschleunigte Computer-Vision-Systeme</h4>
+            <p>Systemgenerator zur Beschreibung von Bild- und Videoverarbeitungssystemen über kompakte Python-Skripte sowie die grafische Oberfläche ASTERICS-GUI mit PyQt (Open Source).</p>
+            <p class="links">
+              <a href="https://github.com/hsa-ees/asterics/blob/master/tools/as-automatics/main_gui.py" target="_blank" rel="noopener">Code auf GitHub</a>
+              <a href="https://www.youtube.com/watch?v=KgFjAnue5lo" target="_blank" rel="noopener">Video ansehen</a>
+            </p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <p class="kicker">10/2016 – 02/2020 · <a href="https://www.uni-augsburg.de/" target="_blank" rel="noopener">Universität Augsburg</a></p>
+          <h3>Bachelor of Science Informatik</h3>
+          <p class="muted">Nebenfach Mathematik</p>
+          <div class="work">
+            <h4>Bachelorarbeit</h4>
+            <p>Ressourceneffizientes Convolutional Neural Network: geringer Speicherbedarf durch Pruning und schnellere Inferenz durch Quantisierung, ausgelegt für große Bildmengen.</p>
+          </div>
+        </article>
+        <article class="card card--small reveal">
+          <h3>Access Risk Tool (ART)</h3>
+          <p class="muted">für agileSI GmbH</p>
+          <p>Tool zur Kontrolle und Auswertung von Zugriffen in SAP, mit automatisierter Identifikation und Prüfung von Datenschutzverletzungen in der Zugriffskontrolle.</p>
+        </article>
+        <article class="card card--small reveal">
+          <h3>StreamDM × SSI</h3>
+          <p class="muted">Social Signal Interpretation</p>
+          <p>Entwicklung einer Softwareschnittstelle zwischen StreamDM und SSI.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ENGAGEMENT -->
+    <section id="engagement" class="section" aria-labelledby="engagement-title">
+      <div class="section__head">
+        <span class="section__no">05</span>
+        <h2 id="engagement-title">Nebentätigkeit &amp; Engagement</h2>
+      </div>
+      <div class="edu">
+        <article class="card reveal">
+          <p class="kicker">Seit mehr als 4 Jahren · <a href="https://www.kameni-immo.com/" target="_blank" rel="noopener">Kameni Immo GmbH</a></p>
+          <h3>Automatisierung &amp; Digitalisierung</h3>
+          <ul class="bullets">
+            <li>Entwicklung von Webseiten mit KI-Unterstützung durch Claude und Codex, ohne manuelle Code-Implementierung (z. B. <a href="https://dkameniimmo.zite.so/" target="_blank" rel="noopener">dkameniimmo.zite.so</a>).</li>
+            <li>Weiterentwicklung der Webseite für Partner und des CRM-Portals.</li>
+            <li>Automatisierung der Telefonanlage mit Make und Sipgate.</li>
+            <li>Prozessautomatisierung mit n8n, Make und Zite; Betrieb von n8n mit Docker.</li>
+            <li>Verknüpfung von No-Code- und Low-Code-Plattformen wie Fillout, Airtable und ClickUp.</li>
+          </ul>
+        </article>
+        <article class="card card--small reveal">
+          <p class="kicker">Seit 09/2022 · <a href="https://ecm-initiative.com/" target="_blank" rel="noopener">ECM e.V.</a></p>
+          <h3>Ehrenamtlicher Betreuer</h3>
+          <p>Vermittlung von Python-Kenntnissen, Betreuung technischer Projekte (u. a. Bildverarbeitung) und Unterstützung von Studierenden bei Abschlussarbeiten.</p>
+        </article>
+        <article class="card card--small reveal">
+          <p class="kicker">Seit 09/2023 · <a href="https://www.kaba-ev.de/" target="_blank" rel="noopener">Kaba e.V.</a>, Ingolstadt</p>
+          <h3>Ehrenamtliches Engagement</h3>
+          <p>Unterstützung freiwilliger sozialer Aktivitäten der Kamerunischen Bavarians.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section section--contact" aria-labelledby="kontakt-title">
+      <div class="section__head">
+        <span class="section__no">06</span>
+        <h2 id="kontakt-title">Kontakt</h2>
+      </div>
+      <div class="contact reveal">
+        <p class="contact__lead">Neue Strecke in Sicht? Ich freue mich auf Ihre Nachricht.</p>
+        <a class="contact__mail" data-u="Temkeng4bewerbung" data-d="yahoo.com" href="#kontakt">
+          <span>Temkeng4bewerbung [at] yahoo.com</span>
+        </a>
+        <div class="contact__links">
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/thibaut-temkeng" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75ZM9.5 9.75h3.8v1.6h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.12V21h-4v-4.97c0-1.19-.02-2.71-1.65-2.71-1.66 0-1.91 1.29-1.91 2.63V21h-4V9.75Z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn btn--ghost" href="https://github.com/temkeng" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <dl class="facts">
+          <div><dt>Sprachen</dt><dd>Französisch (Muttersprache) · Deutsch (verhandlungssicher) · Englisch (gute Kenntnisse)</dd></div>
+          <div><dt>In Weiterbildung</dt><dd>Databricks und PySpark (Selbststudium)</dd></div>
+          <div><dt>Region</dt><dd>Ingolstadt / Gaimersheim, Bayern</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="./brand/ma35-mark.svg" width="28" height="28" alt="" />
+    <span>© <span data-year>2026</span> Thibaut Temkeng · MA35</span>
+    <a href="#top">Nach oben ↑</a>
+  </footer>
+
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>

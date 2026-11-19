@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" role="img" aria-labelledby="t"><title id="t">MA35</title>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7CC4FF"/><stop offset="1" stop-color="#2F6BFF"/></linearGradient></defs>
+<g fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 80V20L37 56L62 20V80"/><path d="M76 80L101 20L126 80M87 57H115"/><path d="M142 20H184L164 45C178 45 186 53 186 62.5C186 72.5 177 80 165 80C155 80 147 75 143 68"/><path d="M242 20H204L201 47C206 44 212 43 219 43C233 43 244 50 244 61.5C244 73 234 80 221 80C211 80 204 76 200 70"/></g>
+<g fill="none" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"><path d="M265.2 42.3A12 12 0 0 1 265.2 57.7"/><path opacity=".7" d="M272.9 35.9A22 22 0 0 1 272.9 64.1"/><path opacity=".4" d="M280.5 29.4A32 32 0 0 1 280.5 70.6"/></g>
+<circle cx="256" cy="50" r="4.5" fill="#2F6BFF"/>
+</svg>
